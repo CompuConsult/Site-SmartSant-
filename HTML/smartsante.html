@@ -1,0 +1,378 @@
+﻿    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <!--Informations Generales-->
+    <div class="container">
+  
+      <form>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-2 position-relative">
+          <label for="Sexe" class="ss-label" >Sexe</label>
+          <input type="texte" class="form-control" id="sexe" placeholder="Entrer le sexe" name="sexe">
+            </div>
+        
+             <div class="col-md-2 position-relative">
+          <label for="Groupe Sanguin" class="ss-label" >Groupe Sanguin</label>
+          <input type="texte" class="form-control" id="GS" placeholder="Entrer le groupe sanguin" name="GS">
+            </div>
+        
+              <div class="col-md-2 position-relative">
+          <label for="Groupe Sanguin" class="ss-label" >Age</label>
+          <input type="texte" class="form-control" id="Age" placeholder="Entrer l'age" name="Age">
+            </div>
+        
+               <div class="col-md-2 offset-md-4 position-relative">
+          <label for="GMT" class="ss-label" >Medecin traitant</label>
+          <input type="texte" class="form-control" id="MT" placeholder="Entrer le nom du Medecin" name="MT">
+            </div>
+        
+            </div>
+          <div class="row">
+        
+              <div class="col-md-2 position-relative">
+          <label for="Groupe Sanguin" class="ss-label" >Poids</label>
+          <input type="texte" class="form-control" id="Poids" placeholder="Entrer le poids" name="Poids">
+            </div>
+        
+              <div class="col-md-2 position-relative">
+          <label for="Taille" class="ss-label" >Taille</label>
+          <input type="texte" class="form-control" id="Taille" placeholder="Entrer la taille" name="Taille">
+            </div>
+        
+          </div>
+      
+        </div>
+    
+        <div class="form-group position-relative">
+          <label for="CG" class="ss-label" >Commentaire generale:</label>
+          <textarea id="CG" name="CG" rows="4" cols="50" class="form-contol">
+            </textarea>
+        </div>   
+      </form>
+    </div>
+  
+      <div class="offset-md-1" >
+      <a class="btn btn-primary" data-toggle="collapse" href="#Ordonnances" role="button" aria-expanded="false" aria-controls="Ordonnances">
+        Ordonnances
+        </a></div>
+
+      <!--Ordonnances-->
+         <div class="container collapse" id="Ordonnances">
+          <div class="card card-body position-relative">
+           <label class="ss-label"> <h4> Ordonnances </h4></label>
+            <form>
+           <div class="card card-body">
+              <div class="offset-md-6">
+                 <button class="offset-md-10">
+                   <i class="fas fa-plus-circle "></i>
+                 </button>
+               </div>
+             <div class="row">
+           
+               <div>
+                 <div class="row ">
+           
+                 <labe class="ss-label"> <h5> Date: 2021-01-21 </h5> </labe>
+               <div class="position-relative">
+                 <label class="ss-label">Medecin</label>
+                  <input type="texte" class="form-control" id="validite" placeholder="Dr Pierre Jacques" name="medecin">
+               </div> 
+           
+               <div class="position-relative">
+                 <label class="ss-label">Validité</label>
+                 <input type="texte" class="form-control" id="validite" placeholder="2021-03-21" name="validite">
+          
+               </div> 
+               </div>
+                  <div class="row">
+           
+               <div class="offset-md-1"> <i class="fas fa-eye-dropper"> <label> 2 medicaments </label> </i> </div>
+               <div class="offset-md-1"> <i class="fas fa-stethoscope"></i> <label> 2 examens</label> </div>
+           
+             </div>
+               </div>
+           
+               <div class="position-relative offset-md-1">
+                 <label class="ss-label">Motif</label>
+                 <textarea id="motif1" name="motif1" rows="4" cols="50" class="form-contol"></textarea>
+               </div> 
+           
+          
+           
+             </div>
+              </div>  
+        
+             <div class="card card-body">
+           <div class="row">
+           
+               <div>
+                 <div class="row">
+           
+                 <labe class="ss-label"> <h5> Date: 2021-01-21 </h5> </labe>
+               <div class="position-relative">
+                 <label class="ss-label">Medecin</label>
+                  <input type="texte" class="form-control" id="validite" placeholder="Dr Pierre Jacques" name="medecin">
+               </div> 
+           
+               <div class="position-relative">
+                 <label class="ss-label">Validité</label>
+                 <input type="texte" class="form-control" id="validite" placeholder="2021-03-21" name="validite">
+          
+               </div> 
+               </div>
+                  <div class="row">
+           
+               <div class="offset-md-1"> <i class="fas fa-eye-dropper"> <label> 2 medicaments </label> </i> </div>
+               <div class="offset-md-1"> <i class="fas fa-stethoscope"></i> <label> 2 examens</label> </div>
+           
+             </div>
+               </div>
+           
+               <div class="position-relative offset-md-1">
+                 <label class="ss-label">Motif</label>
+                 <textarea id="motif2" name="motif2" rows="4" cols="50" class="form-contol"></textarea>
+               </div> 
+           
+         
+           
+             </div>
+              </div>
+         
+         
+            </form>
+          </div>
+        </div>
+  
+      <div class="offset-md-1" >
+      <a class="btn btn-primary" data-toggle="collapse" href="#Hospitalisation" role="button" aria-expanded="false" aria-controls="Hospitalisation">
+        Hospitalisation
+        </a></div>
+  
+      <!--Hospitalisation-->
+  
+      <div class="container collapse " id="Hospitalisation">
+         <div class="card card-body position-relative">
+          <label class="ss-label"> <h4> Hospitalisation </h4></label>
+           <form>
+             <div class="row">
+           
+                <div class="position-relative col-md-4 offset-md-1">
+                 <label class="ss-label">Insititution Medicale</label>
+                  <input type="texte" class="form-control" id="IM" placeholder="Hopitale de la sante publique" name="IM">
+               </div> 
+           
+                <div class="position-relative offset-md-1">
+                 <label class="ss-label">Type D'institution</label>
+                  <input type="texte" class="form-control" id="TD" placeholder="Hopitale" name="TD">
+               </div> 
+           
+             </div>
+         
+             <div class="row">
+           
+               <div class="offset-md-1 col-md-4">
+                  <div class="position-relative">
+                 <label class="ss-label">Medecin principal</label>
+                  <input type="texte" class="form-control" id="MP" placeholder="Dr Pierre Jacques" name="MP">
+               </div> 
+             
+                 <div class="row">
+               
+                  <div class="position-relative col-md-6 ">
+                 <label class="ss-label">Debut</label>
+                  <input type="texte" class="form-control" id="debut" placeholder="1970-01-01" name="debut">
+               </div> 
+               
+                    <div class="position-relative col-md-6">
+                 <label class="ss-label">Fin</label>
+                  <input type="texte" class="form-control" id="fin" placeholder="1970-01-01" name="fin">
+               </div> 
+ 
+                 </div>
+             
+               </div>
+           
+               <div class="position-relative offset-md-1">
+                 <label class="ss-label">Remarques</label>
+                 <textarea id="remarque" name="remarque" rows="4" cols="50" class="form-contol"></textarea>
+               </div> 
+           
+             </div>
+             <hr>
+         
+                     <div class="row">
+           
+                <div class="position-relative col-md-4 offset-md-1">
+                 <label class="ss-label">Insititution Medicale</label>
+                  <input type="texte" class="form-control" id="IM" placeholder="Hopitale de la sante publique" name="IM">
+               </div> 
+           
+                <div class="position-relative offset-md-1">
+                 <label class="ss-label">Type D'institution</label>
+                  <input type="texte" class="form-control" id="TD" placeholder="Hopitale" name="TD">
+               </div> 
+           
+             </div>
+         
+             <div class="row">
+           
+               <div class="offset-md-1 col-md-4">
+                  <div class="position-relative">
+                 <label class="ss-label">Medecin principal</label>
+                  <input type="texte" class="form-control" id="MP" placeholder="Dr Pierre Jacques" name="MP">
+               </div> 
+             
+                 <div class="row">
+               
+                  <div class="position-relative col-md-6 ">
+                 <label class="ss-label">Debut</label>
+                  <input type="texte" class="form-control" id="debut" placeholder="1970-01-01" name="debut">
+               </div> 
+               
+                    <div class="position-relative col-md-6">
+                 <label class="ss-label">Fin</label>
+                  <input type="texte" class="form-control" id="fin" placeholder="1970-01-01" name="fin">
+               </div> 
+ 
+                 </div>
+             
+               </div>
+           
+               <div class="position-relative offset-md-1">
+                 <label class="ss-label">Remarques</label>
+                 <textarea id="remarque" name="remarque" rows="4" cols="50" class="form-contol"></textarea>
+               </div> 
+           
+             </div>
+         
+           </form>
+        
+        </div>
+    
+      </div>  
+  
+       <div class="offset-md-1" >
+      <a class="btn btn-primary" data-toggle="collapse" href="#Allergie" role="button" aria-expanded="false" aria-controls="Allergie">
+       Allergie
+        </a></div>
+  
+      <!--Allergies-->
+      <div class="container collapse " id="Allergie">
+         <div class="card card-body position-relative">
+          <label class="ss-label"> <h4> Allergie </h4></label>
+           <form>
+         
+             <div class="row">
+           
+               <div class="col-md-6" >
+             
+                 <div class="position-relative">
+                 <label class="ss-label">Nom</label>
+                  <input type="texte" class="form-control" id="nAl" placeholder="Au noix de Cajou" name="nAl">
+               </div>
+             
+                   <div class="position-relative">
+                 <label class="ss-label">Signale par</label>
+                  <input type="texte" class="form-control" id="sPa" placeholder="Dr Pierre Jacques" name="sPa">
+               </div>
+        
+               </div>
+           
+               <div class="col-md-6">
+             
+                 <div class="row">
+               
+                     <div class="position-relative">
+                 <label class="ss-label">Type</label>
+                  <input type="texte" class="form-control" id="tAl" placeholder="Alimentaire" name="tAl">
+               </div>
+               
+                        <div class="position-relative">
+                 <label class="ss-label">Severite</label>
+                  <input type="texte" class="form-control" id="sAl" placeholder="Grave" name="sAl">
+               </div>
+               
+                        <div class="position-relative">
+                 <label class="ss-label">Signale le</label>
+                  <input type="texte" class="form-control" id="dAl" placeholder="1970-01-01" name="dAl">
+               </div>
+
+                 </div>
+             
+               <div class="position-relative">
+                 <label class="ss-label">Effet sur le patient</label>
+                 <textarea id="efP" name="efP" rows="4" cols="50" class="form-contol"></textarea>
+               </div> 
+             
+               </div>
+             </div>
+         
+             <hr>
+         
+             <div class="row">
+           
+               <div class="col-md-6" >
+             
+                 <div class="position-relative">
+                 <label class="ss-label">Nom</label>
+                  <input type="texte" class="form-control" id="nAl" placeholder="Au noix de Cajou" name="nAl">
+               </div>
+             
+                   <div class="position-relative">
+                 <label class="ss-label">Signale par</label>
+                  <input type="texte" class="form-control" id="sPa" placeholder="Dr Pierre Jacques" name="sPa">
+               </div>
+        
+               </div>
+           
+               <div class="col-md-6">
+             
+                 <div class="row">
+               
+                     <div class="position-relative">
+                 <label class="ss-label">Type</label>
+                  <input type="texte" class="form-control" id="tAl" placeholder="Alimentaire" name="tAl">
+               </div>
+               
+                        <div class="position-relative">
+                 <label class="ss-label">Severite</label>
+                  <input type="texte" class="form-control" id="sAl" placeholder="Grave" name="sAl">
+               </div>
+               
+                        <div class="position-relative">
+                 <label class="ss-label">Signale le</label>
+                  <input type="texte" class="form-control" id="dAl" placeholder="1970-01-01" name="dAl">
+               </div>
+
+                 </div>
+             
+               <div class="position-relative">
+                 <label class="ss-label">Effet sur le patient</label>
+                 <textarea id="efP" name="efP" rows="4" cols="50" class="form-contol"></textarea>
+               </div> 
+             
+               </div>
+             </div>
+         
+           </form>
+        </div>
+      </div>
+
+  
+  
+  
+  
+    </body>
+    </html>
