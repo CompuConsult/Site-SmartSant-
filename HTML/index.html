@@ -40,88 +40,68 @@
 
     <!--========== HEADER ==========-->
     <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
-        <!-- Navbar -->
-        <div class="s-header__navbar">
-            <div class="s-header__container">
-                <div class="s-header__navbar-row">
-                    <div class="s-header__navbar-row-col">
+        <nav class="s-header-v2__navbar">
+            <div class="container g-display-table--lg">
+                <!-- Navbar Row -->
+                <div class="s-header-v2__navbar-row">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="s-header-v2__navbar-col">
+                        <button type="button" class="collapsed s-header-v2__toggle" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                                <span class="s-header-v2__toggle-icon-bar"></span>
+                            </button>
+                    </div>
+
+                    <div class="s-header-v2__navbar-col s-header-v2__navbar-col-width--180">
                         <!-- Logo -->
-                        <div class="s-header__logo">
-                            <a href="index.html" class="s-header__logo-link">
+                        <div class="s-header-v2__logo">
+                            <a href="index.html" class="s-header-v2__logo-link">
                                 <img class="s-header__logo-img s-header__logo-img-default" src="img/lss.png" width="120px" alt="Megakit Logo">
                                 <img class="s-header__logo-img s-header__logo-img-shrink" src="img/lss.png" width="120px" alt="Megakit Logo">
                             </a>
                         </div>
                         <!-- End Logo -->
                     </div>
-                    <div class="s-header__navbar-row-col">
-                        <!-- Trigger -->
-                        <a href="javascript:void(0);" class="s-header__trigger js__trigger">
-                            <span class="s-header__trigger-icon"></span>
-                            <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
-                                    <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
-                                </svg>
-                        </a>
-                        <!-- End Trigger -->
+
+                    <div class="s-header-v2__navbar-col s-header-v2__navbar-col--right">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
+                            <ul class="s-header-v2__nav">
+                                <!-- Home -->
+                                <li class="s-header-v2__nav-item"><a href="team.html" class="s-header-v2__nav-link">Equipe</a></li>
+
+                                <!-- End Home -->
+
+                                <!-- Pages -->
+                                <li class="dropdown s-header-v2__nav-item s-header-v2__dropdown-on-hover">
+                                    <a href="javascript:void(0);" class="dropdown-toggle s-header-v2__nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
+                                    <ul class="dropdown-menu s-header-v2__dropdown-menu">
+                                        <li><a href="index_clinic.html" class="s-header-v2__dropdown-menu-link">SmartCLinic</a></li>
+                                        <li><a href="faq.html" class="s-header-v2__dropdown-menu-link">SmartHospital</a></li>
+                                        <li><a href="events.html" class="s-header-v2__dropdown-menu-link">SmartLab</a></li>
+                                        <li><a href="index_coming_soon.html" class="s-header-v2__dropdown-menu-link">SmartPharma</a></li>
+                                    </ul>
+                                </li>
+                                <!-- End Pages -->
+
+                                <li class="s-header-v2__nav-item"><a href="about.html" class="s-header-v2__nav-link">A Propos</a></li>
+                                <li class="s-header-v2__nav-item"><a href="services.html" class="s-header-v2__nav-link">Services</a></li>
+                                <li class="s-header-v2__nav-item"><a href="index_app_landing.html" class="s-header-v2__nav-link">Détails</a></li>
+                                <li class="s-header-v2__nav-item"><a href="contacts.html" class="s-header-v2__nav-link s-header-v2__nav-link--dark">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Nav Menu -->
                     </div>
                 </div>
+                <!-- End Navbar Row -->
             </div>
-        </div>
-        <!-- End Navbar -->
-        <!-- Overlay -->
-        <div class="s-header-bg-overlay js__bg-overlay">
-            <!-- Nav -->
-            <nav class="s-header__nav js__scrollbar">
-                <div class="container-fluid">
-                    <!-- Menu List -->
-                    <ul class="list-unstyled s-header__nav-menu">
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="index_clinic.html">SmartClinic</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_app_landing.html">SmartPharma</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_portfolio.html">SmartHospital</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_events.html">SmartLab</a></li>
-                    </ul>
-                    <!-- End Menu List -->
-                    <!-- Menu List -->
-                    <ul class="list-unstyled s-header__nav-menu">
+        </nav>
+        <!-- End Nav -->
+        <!-- Action -->
 
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="team.html">Equipe</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="services.html">Services</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="about.html">A Propos</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="contacts.html">Contacts</a></li>
-                        <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_app_landing.html">Détails</a></li>
-                    </ul>
-                    <!-- End Menu List -->
-                </div>
-            </nav>
-            <!-- End Nav -->
-            <!-- Action -->
-            <ul class="list-inline s-header__action s-header__action--lb">
-                <li class="s-header__action-item"><a class="s-header__action-link -is-active" href="#">En</a></li>
-                <li class="s-header__action-item"><a class="s-header__action-link" href="#">Fr</a></li>
-            </ul>
-            <!-- End Action -->
-            <!-- Action -->
-            <ul class="list-inline s-header__action s-header__action--rb">
-                <li class="s-header__action-item">
-                    <a class="s-header__action-link" href="#">
-                        <i class="g-padding-r-5--xs ti-facebook"></i>
-                        <span class="g-display-none--xs g-display-inline-block--sm">Facebook</span>
-                    </a>
-                </li>
-                <li class="s-header__action-item">
-                    <a class="s-header__action-link" href="#">
-                        <i class="g-padding-r-5--xs ti-twitter"></i>
-                        <span class="g-display-none--xs g-display-inline-block--sm">Twitter</span>
-                    </a>
-                </li>
-                <li class="s-header__action-item">
-                    <a class="s-header__action-link" href="#">
-                        <i class="g-padding-r-5--xs ti-instagram"></i>
-                        <span class="g-display-none--xs g-display-inline-block--sm">Instagram</span>
-                    </a>
-                </li>
-            </ul>
-            <!-- End Action -->
+        <!-- End Action -->
+        <!-- Action -->
+
+        <!-- End Action -->
         </div>
         <!-- End Overlay -->
     </header>
@@ -219,7 +199,7 @@
                 <div class="clearfix">
                     <div class="g-media g-width-30--xs">
                         <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".2s">
-                            <i class="g-font-size-28--xs g-color--primary ti-folder"></i>
+                            <i class="g-font-size-28--xs g-color--primary ti-desktop"></i>
                         </div>
                     </div>
                     <div class="g-media__body g-padding-x-20--xs">
@@ -232,7 +212,7 @@
                 <div class="clearfix">
                     <div class="g-media g-width-30--xs">
                         <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".3s">
-                            <i class="g-font-size-28--xs g-color--primary ti-agenda"></i>
+                            <i class="g-font-size-28--xs g-color--primary ti-mobile"></i>
                         </div>
                     </div>
                     <div class="g-media__body g-padding-x-20--xs">
@@ -257,19 +237,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
-                <div class="clearfix">
-                    <div class="g-media g-width-30--xs">
-                        <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".5s">
-                            <i class="g-font-size-28--xs g-color--primary ti-shield"></i>
-                        </div>
-                    </div>
-                    <div class="g-media__body g-padding-x-20--xs">
-                        <h3 class="g-font-size-18--xs"> Confidentialité </h3>
-                        <p class="g-margin-b-0--xs">Toutes les données seront cryptées et seront accessibles qu'aux utilisateurs authentifiés.</p>
-                    </div>
-                </div>
-            </div>
+
 
         </div>
         <!-- // end row  -->
