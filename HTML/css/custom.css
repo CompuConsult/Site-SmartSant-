@@ -1,0 +1,23 @@
+.s-header__logo-img-shrink {
+    left: auto;
+}
+
+.g-font-size-18--xs {
+    font-size: 1.125rem;
+}
+
+.service-animation:hover {
+    color: #13b1cd;
+}
+
+.top-container {
+    height: 75vh !important;
+}
+
+.top-content {
+    top: 45%;
+}
+
+.hide-details {
+    display: none;
+}

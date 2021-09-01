@@ -27,6 +27,7 @@
     <!-- Theme Styles -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/global/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -85,7 +86,7 @@
 
                                 <li class="s-header-v2__nav-item"><a href="about.html" class="s-header-v2__nav-link">A Propos</a></li>
                                 <li class="s-header-v2__nav-item"><a href="services.html" class="s-header-v2__nav-link">Services</a></li>
-                                <li class="s-header-v2__nav-item"><a href="index_app_landing.html" class="s-header-v2__nav-link">Détails</a></li>
+                                <li class="s-header-v2__nav-item"><a href="index_app_landing.html" class="s-header-v2__nav-link hide-details">Détails</a></li>
                                 <li class="s-header-v2__nav-item"><a href="contacts.html" class="s-header-v2__nav-link s-header-v2__nav-link--dark">Contacts</a></li>
                             </ul>
                         </div>
@@ -107,7 +108,7 @@
     </header>
     <!--========== END HEADER ==========-->
     <!--========== SWIPER SLIDER ==========-->
-    <div class="s-swiper js__swiper-one-item">
+    <div class="s-swiper js__swiper-one-item top-container">
         <!-- Swiper Wrapper -->
         <div class="swiper-wrapper">
             <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/doc1.jpg');">
@@ -133,10 +134,10 @@
         <a href="javascript:void(0);" class="s-swiper__arrow-v1--left s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-left js__swiper-btn--prev"></a>
         <!-- End Arrows -->
 
-        <a href="#js__scroll-to-section" class="s-scroll-to-section-v1--bc g-margin-b-15--xs">
+        <!-- <a href="#js__scroll-to-section" class="s-scroll-to-section-v1--bc g-margin-b-15--xs">
             <span class="g-font-size-18--xs g-color--white ti-angle-double-down"></span>
             <p class="text-uppercase g-color--white g-letter-spacing--3 g-margin-b-0--xs">En Savoir Plus</p>
-        </a>
+        </a> -->
     </div>
     <!--========== END SWIPER SLIDER ==========-->
     <!--========== PAGE CONTENT ==========-->
@@ -186,11 +187,15 @@
                 <div class="clearfix">
                     <div class="g-media g-width-30--xs">
                         <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".1s">
-                            <i class="g-font-size-28--xs g-color--primary ti-tablet"></i>
+                            <a href="index_clinic.html">
+                                <i class="g-font-size-28--xs g-color--primary ti-tablet"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="g-media__body g-padding-x-20--xs">
-                        <h3 class="g-font-size-18--xs"> SmartCLinic </h3>
+                        <a href="index_clinic.html">
+                            <h3 class="g-font-size-18--xs service-animation"> SmartCLinic </h3>
+                        </a>
                         <p class="g-margin-b-0--xs"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
                     </div>
                 </div>
@@ -199,11 +204,15 @@
                 <div class="clearfix">
                     <div class="g-media g-width-30--xs">
                         <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".2s">
-                            <i class="g-font-size-28--xs g-color--primary ti-desktop"></i>
+                            <a href="index_lawyer.html">
+                                <i class="g-font-size-28--xs g-color--primary ti-desktop"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="g-media__body g-padding-x-20--xs">
-                        <h3 class="g-font-size-18--xs"> SmartHospital </h3>
+                        <a href="index_lawyer.html">
+                            <h3 class="g-font-size-18--xs service-animation"> SmartHospital </h3>
+                        </a>
                         <p class="g-margin-b-0--xs"> TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
                     </div>
                 </div>
@@ -212,11 +221,15 @@
                 <div class="clearfix">
                     <div class="g-media g-width-30--xs">
                         <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".3s">
-                            <i class="g-font-size-28--xs g-color--primary ti-mobile"></i>
+                            <a href="">
+                                <i class="g-font-size-28--xs g-color--primary ti-mobile"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="g-media__body g-padding-x-20--xs">
-                        <h3 class="g-font-size-18--xs"> SmartLab </h3>
+                        <a href="">
+                            <h3 class="g-font-size-18--xs service-animation"> SmartLab </h3>
+                        </a>
                         <p class="g-margin-b-0--xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
                     </div>
                 </div>
@@ -228,11 +241,15 @@
                 <div class="clearfix">
                     <div class="g-media g-width-30--xs">
                         <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".4s">
-                            <i class="g-font-size-28--xs g-color--primary ti-server"></i>
+                            <a href="">
+                                <i class="g-font-size-28--xs g-color--primary ti-server"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="g-media__body g-padding-x-20--xs">
-                        <h3 class="g-font-size-18--xs">SmartPharma</h3>
+                        <a href="">
+                            <h3 class="g-font-size-18--xs service-animation">SmartPharma</h3>
+                        </a>
                         <p class="g-margin-b-0--xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
                     </div>
                 </div>
